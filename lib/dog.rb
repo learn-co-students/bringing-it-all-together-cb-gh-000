@@ -2,31 +2,16 @@ class Dog
   attr_accessor :id, :name, :breed
 
   def initialize(id: nil, name:, breed:, attributes: {})
-    if valid_attributes?(attributes)
-      @id = attributes[:id]
-      @name = attributes[:name]
-      @breed = attributes[:breed]
-    else
-      @id = id
-      @name = name
-      @breed = breed
+    attributes.each do |attribute, value|
+      self.send("#{attribute}=", value)
     end
+
+    @id ||= id
+    @name ||= name
+    @breed ||= breed
   end
 
   # Instance Methods
-
-  def valid_attributes?(attributes)
-    case attributes
-      when !attributes.has_key?(id)
-        false
-      when !attributes.has_key?(name)
-        false
-      when !attributes.has_key?(breed)
-        false
-      else
-        true
-    end
-  end
 
   def save
 
@@ -48,7 +33,22 @@ class Dog
     dog
   end
 
-  def self.find_by_id(id)
+  def self.new_from_db(row)
+    id = row[0]
+    name = row[1]
+    breed = row[2]
+    self.new(id, name, breed)
+  end
 
+  def self.find_by_id(id)
+    sql = <<-SQL
+      SELECT name, breed FROM dogs
+      WHERE id = ?
+      LIMIT 1
+    SQL
+
+    DB[:conn].execute(sql, id).map do |row|
+      self.new_from_db(row)
+    end.first
   end
 end
