@@ -13,6 +13,8 @@ class Dog
     end
   end
 
+  # Instance Methods
+
   def valid_attributes?(attributes)
     case attributes
       when !attributes.has_key?(id)
@@ -24,5 +26,29 @@ class Dog
       else
         true
     end
+  end
+
+  def save
+
+  end
+
+  # Class Methods
+
+  def self.create_table
+
+  end
+
+  def self.drop_table
+
+  end
+
+  def self.create(attributes)
+    dog = self.new(attributes)
+    dog.save
+    dog
+  end
+
+  def self.find_by_id(id)
+
   end
 end
