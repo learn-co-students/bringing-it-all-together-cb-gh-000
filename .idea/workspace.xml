@@ -6,7 +6,9 @@
     </enabled-run-configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fffd681b-f88b-4bd4-b92d-eb1c1ab023ac" name="Default" comment="" />
+    <list default="true" id="fffd681b-f88b-4bd4-b92d-eb1c1ab023ac" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -410,7 +412,7 @@
       <option name="presentableId" value="Default" />
       <updated>1492977204490</updated>
       <workItem from="1492977206118" duration="5964000" />
-      <workItem from="1492983783147" duration="7299000" />
+      <workItem from="1492983783147" duration="7365000" />
     </task>
     <task id="LOCAL-00001" summary="Initialize Dog with id, name, and breed">
       <created>1492979467559</created>
@@ -476,7 +478,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13263000" />
+    <option name="totallyTimeSpent" value="13329000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
