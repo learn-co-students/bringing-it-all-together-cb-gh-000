@@ -333,7 +333,7 @@
       <updated>1492977204490</updated>
       <workItem from="1492977206118" duration="5964000" />
       <workItem from="1492983783147" duration="7365000" />
-      <workItem from="1492992198403" duration="185000" />
+      <workItem from="1492992198403" duration="297000" />
     </task>
     <task id="LOCAL-00001" summary="Initialize Dog with id, name, and breed">
       <created>1492979467559</created>
@@ -399,7 +399,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13514000" />
+    <option name="totallyTimeSpent" value="13626000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
