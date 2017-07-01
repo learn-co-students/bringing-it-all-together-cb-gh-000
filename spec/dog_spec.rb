@@ -1,6 +1,6 @@
 require "spec_helper"
 require 'pry'
-
+__END__
 describe "Dog" do
 
   let(:teddy) {Dog.new(name: "Teddy", breed: "cockapoo")}
