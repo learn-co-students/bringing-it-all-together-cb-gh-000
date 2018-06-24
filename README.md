@@ -6,7 +6,7 @@
 
 ## Instructions
 This lab involves building a basic ORM for a Dog object.  The `Dog` class defined in `lib/dog.rb` implements behaviors of a basic ORM.
-
+k
 
 - **Environment**
   Our environment is going to be a single point of requires and loads.  It is also going to define a constant, `DB`, whose sole responsibility is setting up and maintaining connection to our application's database.
