@@ -9,7 +9,7 @@
 ## Instructions
 
 This lab involves building a basic ORM for a Dog object.  The `Dog` class
-defined in `lib/dog.rb` implements behaviors of a basic ORM.
+defined in `lib/dog.rb` implements behaviors of a basic ORM.s
 
 ### **Environment**
 
